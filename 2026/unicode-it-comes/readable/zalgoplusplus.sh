@@ -1,15 +1,16 @@
 #!/bin/sh
-# Readable version of ../zalgoplusplus.sh (234 characters).
+# Readable version of ../zalgoplusplus.sh (255 characters).
 #
 # Like ../zalgo.sh, plus:
 #   - Markdown headings: "#" before chapter titles, "##" before sections,
 #     "###" before subsections. The hashes get no marks, so the headings
-#     still render as Markdown.
+#     still render as Markdown. Chapter titles are merged with their
+#     "Chapter N" label: "# Chapter 1: Introduction".
 #   - &lt; and &amp; are decoded.
 #   - Rising corruption ("It comes"): instead of ord % 8 marks per character,
 #     each character gets a random number of marks between 0 and a ceiling
 #     that grows with every character printed. Chapter 1 starts clean; by the
-#     end of chapter 24 the ceiling is about 18.
+#     end of chapter 24 the ceiling is 17.
 #
 # Run it with sh: in zsh the unquoted [1-24] in the golfed version is taken
 # as a glob and fails with "no matches found".
@@ -23,13 +24,22 @@ curl -L 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
   s#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;
   s/(<.*?>\s*)+/\n/g;
 
+  # "Chapter 1\n# Introduction" -> "# Chapter 1: Introduction". The line
+  # before a "# " heading only ends in a digit for chapter titles; the other
+  # h1s ("Disclaimer", "Warning") are left alone. "." does not match newlines,
+  # so (.+\d) is exactly the "Chapter N" line.
+  s/(.+\d)\n# /# $1: /g;
+
   # Entities. Done after the tags are gone, so a decoded "<" cannot start a
   # tag that the patterns above would remove.
   s/&lt;/</g;
   s/&amp;/&/g;
 
-  # Every character except "#" and newline gets rand($i * 8e-6) marks, where
-  # $i counts the characters so far ("1 .. 2.7" is 1, 2). Skipping newlines
-  # keeps marks from landing at the start of a heading line.
-  s/[^#\n]/$&.pack "U*", map { 768 + rand 112 } 1 .. rand($i++ * 8e-6)/ge;
+  # Every character except "#" and newline gets rand($i >> 17) marks, where
+  # $i counts the characters so far: the ceiling goes up by one every 131072
+  # characters ("1 .. 2.7" is 1, 2). rand is a named unary operator, which
+  # binds more loosely than >>, so the golfed "rand$i++>>17" needs no
+  # brackets. Skipping newlines keeps marks from landing at the start of a
+  # heading line.
+  s/[^#\n]/$&.pack "U*", map { 768 + rand 112 } 1 .. rand($i++ >> 17)/ge;
 '
