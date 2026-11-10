@@ -1,0 +1,1 @@
+curl -L unicode.org/versions/latest/core-spec/chapter-[1-24]|perl -CS -0pe's/<h(\d)/"#"x$1." $&"/ge;s#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;s/(<.*?>\s*)+/\n/g;s/&lt;/</g;s/&amp;/&/g;s/[^#\n]/$&.pack"U*",map{768+rand 112}1..rand$i++*8e-6/ge'
