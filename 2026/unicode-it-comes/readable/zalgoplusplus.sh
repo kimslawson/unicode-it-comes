@@ -1,5 +1,5 @@
 #!/bin/sh
-# Readable version of ../zalgoplusplus.sh (255 characters).
+# Readable version of ../zalgoplusplus.sh (256 characters).
 #
 # Like ../zalgo.sh, plus:
 #   - Markdown headings: "#" before chapter titles, "##" before sections,
@@ -12,10 +12,18 @@
 #     that grows with every character printed. Chapter 1 starts clean; by the
 #     end of chapter 24 the ceiling is 17.
 #
-# Run it with sh: in zsh the unquoted [1-24] in the golfed version is taken
-# as a glob and fails with "no matches found".
+# curl options:
+#   -f   fail on HTTP errors: if a chapter comes back as an error page (404,
+#        503, rate limit...), nothing is written for it and curl prints the
+#        error to stderr, instead of the error page ending up in the book
+#   -L   follow redirects ("latest" redirects to the current version)
+#
+# The golfed version writes the URL as chapter-\[1-24] with the first bracket
+# escaped. zsh would otherwise take [1-24] as a glob and fail with "no matches
+# found"; with the backslash, sh, bash and zsh all pass chapter-[1-24] to curl,
+# which expands the range itself. (Quoting the URL, as here, costs 2 bytes.)
 
-curl -L 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
+curl -fL 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
   # Before <h1>, <h2>, <h3>: one "#" per heading level and a space.
   s/<h(\d)/"#" x $1 . " $&"/ge;
 
@@ -41,5 +49,9 @@ curl -L 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
   # binds more loosely than >>, so the golfed "rand$i++>>17" needs no
   # brackets. Skipping newlines keeps marks from landing at the start of a
   # heading line.
-  s/[^#\n]/$&.pack "U*", map { 768 + rand 112 } 1 .. rand($i++ >> 17)/ge;
+  # The marks come from U+0300..U+0362 (768 + rand 99, truncated): the whole
+  # Combining Diacritical Marks block except its last 13 code points, the
+  # superscript Latin letters U+0363..U+036F. Leaving those out saved the
+  # byte that pays for curl -f.
+  s/[^#\n]/$&.pack "U*", map { 768 + rand 99 } 1 .. rand($i++ >> 17)/ge;
 '

@@ -1,1 +1,1 @@
-curl -L unicode.org/versions/latest/core-spec/chapter-[1-24]|perl -CS -0pe's#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;s/(<.*?>\s*)+/\n/g;s/./$&.pack"U*",map{768+rand 112}1..ord$&&7/ge'
+curl -fL unicode.org/versions/latest/core-spec/chapter-\[1-24]|perl -CS -0pe's#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;s/(<.*?>\s*)+/\n/g;s/./$&.pack"U*",map{768+rand 112}1..ord$&&7/ge'

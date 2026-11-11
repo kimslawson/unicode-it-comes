@@ -1,9 +1,18 @@
 #!/bin/sh
-# Readable version of ../zalgo.sh (175 characters).
+# Readable version of ../zalgo.sh (177 characters).
 #
 # Same text as ../zalgo-text-golfed.py, done with curl piped into Perl.
-# Run it with sh: in zsh the unquoted [1-24] in the golfed version is taken
-# as a glob and fails with "no matches found".
+#
+# curl options:
+#   -f   fail on HTTP errors: if a chapter comes back as an error page (404,
+#        503, rate limit...), nothing is written for it and curl prints the
+#        error to stderr, instead of the error page ending up in the book
+#   -L   follow redirects ("latest" redirects to the current version)
+#
+# The golfed version writes the URL as chapter-\[1-24] with the first bracket
+# escaped. zsh would otherwise take [1-24] as a glob and fail with "no matches
+# found"; with the backslash, sh, bash and zsh all pass chapter-[1-24] to curl,
+# which expands the range itself. (Quoting the URL, as here, costs 2 bytes.)
 #
 # Perl options:
 #   -CS  read stdin and write stdout as UTF-8, so the script works on
@@ -17,7 +26,7 @@
 # newlines get no marks. The Python versions put ord("\n") % 8 = 2 marks
 # after each newline, so the output differs only there.
 
-curl -L 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
+curl -fL 'unicode.org/versions/latest/core-spec/chapter-[1-24]' | perl -CS -0pe '
   # Page code (from the first <meta> to the end of <hgroup class="svelte-1obhclj">)
   # and every tag except closing tags of block elements. /s: "." matches newlines.
   s#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;
