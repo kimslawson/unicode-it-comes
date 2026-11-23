@@ -113,7 +113,7 @@ MarkText seems to limit headings to their own bounding box, but leaves regular l
 
 Other viewers (such as [Glow](https://github.com/charmbracelet/glow)) please Cthulhu.
 
-![](unicode-it-comes/glow.png)
+![](glow.png)
 
 ## git blame
 
