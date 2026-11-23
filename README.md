@@ -1,36 +1,63 @@
 # U̶̝͛̇ṉͧ̾́i͔c͓̯̺ͨo̖̠͎ͬ̑ͭd̗̗ͅe̶ͅ,ͯ Iͧͬt̷̝̜̮̋ͨͪ C̎ͣo̸͕͒̄m͎̘̠̀e̜͈ͮ͊̆s̃ͮ̀
 
-What if the Unicode spec were consumed by a s͗l͔̜o͍̰͇ẁ̺͉̝̆l̻̫ͬ̔̐̽y͈͇ͣ͐ͪͮ͐͆ ġ̯̦͈̹̞͚ͧ́ͫr̝̳͚̩̯ͨ̉̎͆ͪ͑ͅo̖̳̺͇̘̪̻̒ͪ̌͒͒̆ͮw̸̢̛̹͔̰͕̬͈̺̋͒̌̀͌ͨ̔i̶̷̞͍̻̞͉̗̠͑͊͊̉̌̆̄̓̇͐n̷̵̸̙̗̞͛ͨͧͮͪͮ͛͛̋͋̅̋̐͊̋͑ģ̶̡̣͔͕͇̣͈̜͛̅ͣ́̊ͬͨͤ̐͋ͬ̑̔̚ͅ h̷̵̴̷̨̨̦̬͔̘̪͍͖̦̝̝̐̀ͤ͐ͬ͗̽͊́̃̇̕ö̴̡̧͔̬̞̯̟͔̻̫̪̥̟̯̭̤ͧ͋̿͊́́͑̔ͩ̎̌͐ͅr̷̸̸̶̴̢̢̛͇͖̼̘̞̜̗͈͕̫̱͊̀ͣͭ͛͗̉̓̒̒̿ͩͣ͛̊r̶̛̖̞͔̝̥͖͉̩̺̬̞̪̤̝ͮ̍ͧ̔ͯ͑̄ͫ̔ͤͯ̋͐ͭͦ̉ͥ͌ͣ̉̚̕ơ̸̷̸̡͖̺͓͕̼̙̞̹̹͓̻̜̣̠͚̜̤̹̫̦ͥ͆ͤ̆̽ͪ̂̑̍ͩͤ̎ͦ̔̔ͅr̶̡̧̢̧̡̡̘̞̰͔͖͎͍̭̼͍̗͚̪̟̞͕͕̞̰̺͐̑ͯ̍̓͗̔ͤ̿̍͛̍ͤͪͨͤͣ̋? The corruption born of the spec eats the spec itself.
+What if the Unicode spec were consumed by a s͗l͔̜o͍̰͇ẁ̺͉̝̆l̻̫ͬ̔̐̽y͈͇ͣ͐ͪͮ͐͆ ġ̯̦͈̹̞͚ͧ́ͫr̝̳͚̩̯ͨ̉̎͆ͪ͑ͅo̖̳̺͇̘̪̻̒ͪ̌͒͒̆ͮw̸̢̛̹͔̰͕̬͈̺̋͒̌̀͌ͨ̔i̶̷̞͍̻̞͉̗̠͑͊͊̉̌̆̄̓̇͐n̷̵̸̙̗̞͛ͨͧͮͪͮ͛͛̋͋̅̋̐͊̋͑ģ̶̡̣͔͕͇̣͈̜͛̅ͣ́̊ͬͨͤ̐͋ͬ̑̔̚ͅ h̷̵̴̷̨̨̦̬͔̘̪͍͖̦̝̝̐̀ͤ͐ͬ͗̽͊́̃̇̕ö̴̡̧͔̬̞̯̟͔̻̫̪̥̟̯̭̤ͧ͋̿͊́́͑̔ͩ̎̌͐ͅr̷̸̸̶̴̢̢̛͇͖̼̘̞̜̗͈͕̫̱͊̀ͣͭ͛͗̉̓̒̒̿ͩͣ͛̊r̶̛̖̞͔̝̥͖͉̩̺̬̞̪̤̝ͮ̍ͧ̔ͯ͑̄ͫ̔ͤͯ̋͐ͭͦ̉ͥ͌ͣ̉̚̕ơ̸̷̸̡͖̺͓͕̼̙̞̹̹͓̻̜̣̠͚̜̤̹̫̦ͥ͆ͤ̆̽ͪ̂̑̍ͩͤ̎ͦ̔̔ͅr̶̡̧̢̧̡̡̘̞̰͔͖͎͍̭̼͍̗͚̪̟̞͕͕̞̰̺͐̑ͯ̍̓͗̔ͤ̿̍͛̍ͤͪͨͤͣ̋? 
+The corruption born of the spec eats the spec itself.
 
-A 256 byte entry into [Nano-NaNoGenMo](https://nickm.com/post/2019/11/nano-nanogenmo-or-nnngm/) (#NNNGM), [National Novel Generation Month](https://nanogenmo.github.io), Nano edition. Curl and perl and Cthulhu form an unlikely and unholy alliance.
+A 256 byte entry into [Nano-NaNoGenMo](https://nickm.com/post/2019/11/nano-nanogenmo-or-nnngm/) (#NNNGM), 
+[National Novel Generation Month](https://nanogenmo.github.io), Nano edition. 
+Curl and perl and Cthulhu form an unlikely and unholy alliance.
 
 ## The Competiton
 
-NaNoGenMo is a generative riff on NaNoWriMo. The goal is to write code that generates a ‘novel’ (for some definition of the word, though some of them are, indeed, quite novel) of at least 50,000 words. The contest runs through the month of November each year. Entries are submitted as github issues on the [NaNoGenMo repo](https://github.com/NaNoGenMo) on Github.
+NaNoGenMo is a generative riff on NaNoWriMo. The goal is to write 
+code that generates a ‘novel’ (for some definition of the word, 
+though some of them are, indeed, quite novel) of at least 50,000 
+words. The contest runs through the month of November each year. 
+Entries are submitted as github issues on the [NaNoGenMo repo](https://github.com/NaNoGenMo) on Github.
 
 ## What it is
 
-A shell script that uses curl to fetch each chapter of the latest version of the Unicode specification (Version 18 at the time of this writing) and then a heavily obfuscated bit of perl processes it into a dawning eldritch horror.
+A shell script that uses curl to fetch each chapter of the latest 
+version of the Unicode specification (Version 18 at the time of 
+this writing) and then a heavily obfuscated bit of perl processes 
+it into a dawning eldritch horror.
 
-The novel is the Unicode Standard, the core specification. All 24 chapters are downloaded live from unicode.org, stripped down to their text, and then slowly consumed by combining diacritical marks. Chapter 1 is eminently readable, tricking the reader into a false sense of security. By Chapter 24, every letter is buried under accents, overlays and strikethroughs.
+The novel is the Unicode Standard, the core specification. All 24 
+chapters are downloaded live from unicode.org, stripped down to 
+their text, and then slowly consumed by combining diacritical marks. 
+Chapter 1 is eminently readable, tricking the reader into a false 
+sense of security. By Chapter 24, every letter is buried under 
+accents, overlays and strikethroughs.
 
-The idea came out of a bit of spec work I did for the Unicode cover contest in 2018. Fittingly, I’ve reused that work as the cover for this work.
+The idea came out of a bit of spec work I did for the Unicode cover 
+contest in 2018. Fittingly, I’ve reused that work as the cover for 
+this work.
 
 ## Where is it?
 
-It’s a small (256 byte) script written mostly in perl, so it’s understandable you might miss it, or think your cat jumped on the keyboard and wrote some gibberish into a file. Rest assured that somehow, it actually *is* executable (if not exactly readable) perl code.
+It’s a small (256 byte) script written mostly in perl, so it’s 
+understandable you might miss it, or think your cat jumped on the 
+keyboard and wrote some gibberish into a file. Rest assured that 
+somehow, it actually *is* executable (if not exactly readable) perl 
+code.
 
 `curl -fL unicode.org/versions/latest/core-spec/chapter-\[1-24]|perl -CS -0pe's/<h(\d)/"#"x$1." $&"/ge;s#<m.*?j">|<(?!/[dfhlpt]).*?>##gs;s/(<.*?>\s*)+/\n/g;s/(.+\d)\n# /# $1: /g;s/&lt;/</g;s/&amp;/&/g;s/[^#\n]/$&.pack"U*",map{768+rand 99}1..rand$i++>>17/ge'`
 
 “That’s pretty short and unreadable, but could it be even shorter and worser?”
 
-I’m glad you asked! Depending on your interpretation of the NNNGM rules, the above can be compressed from 256 characters to 196 characters by packing the body of the perl script into double-byte unicode characters:
+I’m glad you asked! Depending on your interpretation of the NNNGM rules, 
+the above can be compressed from 256 characters to 196 characters by 
+packing the body of the perl script into double-byte unicode characters:
 
 `curl -fL unicode.org/versions/latest/core-spec/chapter-\[1-24]|perl -CS -0pe'eval pack"n*",unpack"C0U*","猯㱨⡜搩⼢⌢砤ㄮ∠␦∯来㭳⌼洮⨿樢㹼㰨㼡⽛摦桬灴崩⸪㼾⌣杳㭳⼨㰮⨿㹜猪⤫⽜港朻猯⠮⭜搩屮⌠⼣․ㄺ 朻猯♬琻⼼⽧㭳⼦慭瀻⼦⽧㭳⽛帣屮崯␦⹰慣欢唪∬浡灻㜶㠫牡湤‹㥽ㄮ⹲慮搤椫⬾㸱㜯来"'`
 
-Problem is, though it’s shorter in *characters*, it’s longer in *bytes* (374, versus 256)
+Problem is, though it’s shorter in *characters*, it’s longer in *bytes* 
+(374, versus 256).
 
-This feels sneaky, though, and if it doesn’t violate the rules, it sure seems like it violates the *spirit* of the rules. Fittingly, it uses Unicode to codegolf an entry about corrupting the Unicode spec using a feature of Unicode.
+This feels sneaky, though, and if it doesn’t violate the rules, it sure 
+seems like it violates the *spirit* of the rules. Fittingly, it uses 
+Unicode to codegolf an entry about corrupting the Unicode spec using a 
+feature of Unicode.
 
 ## How do I run it?
 
@@ -98,20 +125,29 @@ marks. When a letter carries marks its font doesn’t have, the system
 draws the letter and its marks in a fallback font, so the letterforms
 and spacing change from one character to the next. Fonts that cover the
 whole block, like Menlo, SF Mono, DejaVu Sans Mono or Iosevka, give a
-steadier texture. The flicker is a fitting side effect for a book about
-Unicode.
+steadier texture. The uneven text and font fallbacks are fitting side 
+effects for a book about Unicode.
 
 ## A note on markdown viewers and renderers
 
-Some markdown viewers (and other text rendering environments) limit the overflow of a box, clipping the Zalgo in a disappointing way. In the extreme case, each line is its own box, clipping any combining characters that dare stray between lines. This is why I wasn’t able to make a satisfactory PDF version of the output. Boo.
+Some markdown viewers (and other text rendering environments) limit the 
+overflow of a box, clipping the Zalgo in a disappointing way. In the 
+extreme case, each line is its own box, clipping any combining characters 
+that dare stray between lines. This is why I wasn’t able to make a 
+satisfactory PDF version of the output. Boo.
+
+An attempt at PDF using ghostscript and weasyprint:
 
 ![](ghostscript.png)
 
-MarkText seems to limit headings to their own bounding box, but leaves regular lines of text alone.
+MarkText seems to limit headings to their own bounding box, but leaves 
+regular lines of text alone:
 
 ![](marktext.png)
 
-Other viewers (such as [Glow](https://github.com/charmbracelet/glow)) please Cthulhu.
+Other markdown viewers work better. This is from [Glow](https://github.com/charmbracelet/glow)) 
+(the font is Victor Mono, which seems to have all the requisite bits and 
+bobs needed to please Cthulhu).
 
 ![](glow.png)
 
