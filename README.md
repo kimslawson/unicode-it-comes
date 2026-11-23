@@ -1,3 +1,5 @@
+![](cover.png)
+
 # U̶̝͛̇ṉͧ̾́i͔c͓̯̺ͨo̖̠͎ͬ̑ͭd̗̗ͅe̶ͅ,ͯ Iͧͬt̷̝̜̮̋ͨͪ C̎ͣo̸͕͒̄m͎̘̠̀e̜͈ͮ͊̆s̃ͮ̀
 
 What if the Unicode spec were consumed by a s͗l͔̜o͍̰͇ẁ̺͉̝̆l̻̫ͬ̔̐̽y͈͇ͣ͐ͪͮ͐͆ ġ̯̦͈̹̞͚ͧ́ͫr̝̳͚̩̯ͨ̉̎͆ͪ͑ͅo̖̳̺͇̘̪̻̒ͪ̌͒͒̆ͮw̸̢̛̹͔̰͕̬͈̺̋͒̌̀͌ͨ̔i̶̷̞͍̻̞͉̗̠͑͊͊̉̌̆̄̓̇͐n̷̵̸̙̗̞͛ͨͧͮͪͮ͛͛̋͋̅̋̐͊̋͑ģ̶̡̣͔͕͇̣͈̜͛̅ͣ́̊ͬͨͤ̐͋ͬ̑̔̚ͅ h̷̵̴̷̨̨̦̬͔̘̪͍͖̦̝̝̐̀ͤ͐ͬ͗̽͊́̃̇̕ö̴̡̧͔̬̞̯̟͔̻̫̪̥̟̯̭̤ͧ͋̿͊́́͑̔ͩ̎̌͐ͅr̷̸̸̶̴̢̢̛͇͖̼̘̞̜̗͈͕̫̱͊̀ͣͭ͛͗̉̓̒̒̿ͩͣ͛̊r̶̛̖̞͔̝̥͖͉̩̺̬̞̪̤̝ͮ̍ͧ̔ͯ͑̄ͫ̔ͤͯ̋͐ͭͦ̉ͥ͌ͣ̉̚̕ơ̸̷̸̡͖̺͓͕̼̙̞̹̹͓̻̜̣̠͚̜̤̹̫̦ͥ͆ͤ̆̽ͪ̂̑̍ͩͤ̎ͦ̔̔ͅr̶̡̧̢̧̡̡̘̞̰͔͖͎͍̭̼͍̗͚̪̟̞͕͕̞̰̺͐̑ͯ̍̓͗̔ͤ̿̍͛̍ͤͪͨͤͣ̋? 
@@ -27,11 +29,13 @@ chapters are downloaded live from unicode.org, stripped down to
 their text, and then slowly consumed by combining diacritical marks. 
 Chapter 1 is eminently readable, tricking the reader into a false 
 sense of security. By Chapter 24, every letter is buried under 
-accents, overlays and strikethroughs.
+accents, overlays and strikethroughs. The output runs to about 
+364,000 words (variation is down to how different versions of wc
+count bytes and words).
 
-The idea came out of a bit of spec work I did for the Unicode cover 
-contest in 2018. Fittingly, I’ve reused that work as the cover for 
-this work.
+The idea came out of a bit of [spec work](https://dribbble.com/shots/4329965-Unicode-11-i-t-c-o-m-e-s) 
+I did for the Unicode cover contest in 2018. Fittingly, I’ve reused 
+that work as the cover for this book.
 
 ## Where is it?
 
@@ -115,8 +119,8 @@ corruption.
 | [`zalgo-golfed.py`](zalgo-golfed.py)           | 189     | Same output, golfed.                                                                       |
 | [`zalgo-text.py`](zalgo-text.py)               | 255     | Only the spec’s text, with paragraph breaks.                                               |
 | [`zalgo-text-golfed.py`](zalgo-text-golfed.py) | 239     | The same, golfed. Code samples keep their indentation.                                     |
-| [`zalgo.sh`](zalgo.sh)                         | 177     | The same text again, in Perl, with a fixed `ord % 8` marks per character.                  |
-| [`zalgoplusplus.sh`](zalgoplusplus.sh)         | **256** | The entry.                                                                                 |
+| [`zalgo.sh`](zalgo.sh)                         | 177     | The same text again, in Perl, with a fixed `ord % 8` marks per character.           |
+| **[`zalgoplusplus.sh`](zalgoplusplus.sh)**     | **256** | **The final #NNNGM entry.**                                                                |
 
 ## A note on fonts
 
@@ -124,9 +128,10 @@ Most terminal and editor fonts include only a few of the 112 combining
 marks. When a letter carries marks its font doesn’t have, the system
 draws the letter and its marks in a fallback font, so the letterforms
 and spacing change from one character to the next. Fonts that cover the
-whole block, like Menlo, SF Mono, DejaVu Sans Mono or Iosevka, give a
-steadier texture. The uneven text and font fallbacks are fitting side 
-effects for a book about Unicode.
+whole block, like Menlo, SF Mono, DejaVu Sans Mono, Victor, or Iosevka, 
+give a steadier texture. That said, even if you don't use a font with
+full coverage, he uneven text and font fallbacks are fitting side 
+effects for a book about Unicode. 
 
 ## A note on markdown viewers and renderers
 
@@ -151,10 +156,21 @@ bobs needed to please Cthulhu).
 
 ![](glow.png)
 
-## git blame
+## Who‘s to `git blame`?
 
 I, Kim Slawson, claim inspiration, authorship (and blame) for this work.
 
 Find my other work at [https://slawson.org](https://slawson.org).
 
 Catch me on [Mastodon](https://oldbytes.space/@0xC0FFEE) and [Bluesky](https://bsky.app/profile/0xc0ffee.bsky.social).
+
+---
+
+> “Enjoy the power and beauty of Unicode; oh nevermind; you will not
+> understand the power and beauty of Unicode until its novelty has faded.
+> But trust me, in 20 years you’ll look back and recall in a way you
+> can’t grasp now how much possibility lay before you and how fabulous
+> it really was.”
+
+— Corrupted from “Everybody’s Free (To Wear sunscreen).” 
+Apologies to Baz Luhrmann.
