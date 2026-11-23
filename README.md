@@ -26,7 +26,7 @@ It’s a small (256 byte) script written mostly in perl, so it’s understandabl
 
 I’m glad you asked! Depending on your interpretation of the NNNGM rules, the above can be compressed from 256 characters to 196 characters by packing the body of the perl script into double-byte unicode characters:
 
-`curl -fL [unicode.org/versions/latest/core-spec/chapter-\[1-24]|perl](http://unicode.org/versions/latest/core-spec/chapter-%5C%5B1-24%5D%7Cperl) -CS -0pe'eval pack"n*",unpack"C0U*","猯㱨⡜搩⼢⌢砤ㄮ∠␦∯来㭳⌼洮⨿樢㹼㰨㼡⽛摦桬灴崩⸪㼾⌣杳㭳⼨㰮⨿㹜猪⤫⽜港朻猯⠮⭜搩屮⌠⼣․ㄺ 朻猯♬琻⼼⽧㭳⼦慭瀻⼦⽧㭳⽛帣屮崯␦⹰慣欢唪∬浡灻㜶㠫牡湤‹㥽ㄮ⹲慮搤椫⬾㸱㜯来"'`
+`curl -fL unicode.org/versions/latest/core-spec/chapter-\[1-24]|perl -CS -0pe'eval pack"n*",unpack"C0U*","猯㱨⡜搩⼢⌢砤ㄮ∠␦∯来㭳⌼洮⨿樢㹼㰨㼡⽛摦桬灴崩⸪㼾⌣杳㭳⼨㰮⨿㹜猪⤫⽜港朻猯⠮⭜搩屮⌠⼣․ㄺ 朻猯♬琻⼼⽧㭳⼦慭瀻⼦⽧㭳⽛帣屮崯␦⹰慣欢唪∬浡灻㜶㠫牡湤‹㥽ㄮ⹲慮搤椫⬾㸱㜯来"'`
 
 Problem is, though it’s shorter in *characters*, it’s longer in *bytes* (374, versus 256)
 
@@ -55,7 +55,7 @@ are left uncorrupted so they still render.
 
 Read right to left, more or less:
 
-1. **Fetch.** `curl -fL 鈥�/chapter-\[1-24]` downloads all 24 chapter pages
+1. **Fetch.** `curl -fL …/chapter-\[1-24]` downloads all 24 chapter pages
    in one call, using curl’s own URL ranges. The `\[` keeps zsh from
    treating the range as a glob, and `-f` keeps any errors out of the book.
 2. **Headings.** `s/<h(\d)/"#"x$1." $&"/ge` puts one `#` per heading level
@@ -67,7 +67,7 @@ Read right to left, more or less:
 4. **Chapter titles.** `s/(.+\d)\n# /# $1: /g` merges “Chapter 1” and 
    "# Introduction” into `# Chapter 1: Introduction`.
 5. **Entities.** `&lt;` and `&amp;` become `<` and `&` again.
-6. **It comes.** `s/[^#\n]/鈥�/ge` follows every character (except `#` and
+6. **It comes.** `s/[^#\n]/…/ge` follows every character (except `#` and
    newline) with a random number of marks from U+0300 to U+0362, the
    Combining Diacritical Marks block. The maximum number of marks goes up
    by one every 131,072 characters (`rand$i++>>17`), so the corruption
