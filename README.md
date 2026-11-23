@@ -105,15 +105,15 @@ Unicode.
 
 Some markdown viewers (and other text rendering environments) limit the overflow of a box, clipping the Zalgo in a disappointing way. In the extreme case, each line is its own box, clipping any combining characters that dare stray between lines. This is why I wasn’t able to make a satisfactory PDF version of the output. Boo.
 
-![](/Users/kim/Repositories/unicode-it-comes/ghostscript.png)
+![](ghostscript.png)
 
 MarkText seems to limit headings to their own bounding box, but leaves regular lines of text alone.
 
-![](/Users/kim/Repositories/unicode-it-comes/marktext.png)
+![](marktext.png)
 
 Other viewers (such as [Glow](https://github.com/charmbracelet/glow)) please Cthulhu.
 
-![](/Users/kim/Repositories/unicode-it-comes/glow.png)
+![](unicode-it-comes/glow.png)
 
 ## git blame
 
